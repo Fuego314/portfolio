@@ -13,6 +13,7 @@ const cache = require('gulp-cache');
 const del = require('del');
 const runSequence = require('run-sequence');
 const browserSync = require('browser-sync').create();
+const prompt = require('gulp-prompt');
 const deploy = require('gulp-gh-pages');
 
 // DEV TASKS
@@ -108,6 +109,15 @@ gulp.task('build', (callback) => {
 
 // Push build to gh-pages
 gulp.task('deploy', ['build'], () => {
-  return gulp.src('dist/**/*')
-    .pipe(deploy());
+	gulp.src('package.json')
+    .pipe(prompt.prompt({
+      type: 'input',
+      name: 'commit',
+      message: 'Enter commit message'
+    }, (res) => {
+      return gulp.src('dist/**/*')
+      .pipe(deploy({
+        message: res
+      }));
+    }));
 });
