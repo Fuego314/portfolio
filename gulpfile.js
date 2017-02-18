@@ -35,7 +35,8 @@ gulp.task('sass', () => {
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(uncss({
         html: ['app/index.html'],
-        ignoreSheets : [/fonts.googleapis/]
+        ignore: ['.nav.open', '.top-bar-open', '.middle-bar-open', '.bottom-bar-open'],
+        ignoreSheets: [/fonts.googleapis/]
     }))
     .pipe(autoprefixer({
         browsers: ['last 4 versions'],
@@ -49,7 +50,6 @@ gulp.task('sass', () => {
 
 gulp.task('watch', ['browserSync', 'sass'], () =>{
   gulp.watch('app/sass/**/*.sass', ['sass']);
-  gulp.watch('app/css/main.css', ['prefix']);
   gulp.watch('app/*.html', browserSync.reload);
   gulp.watch('app/js/*.js', ['babel', browserSync.reload]);
 });
