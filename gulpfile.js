@@ -1,4 +1,4 @@
-const global.$ = require('jquery');
+const $ = require('jquery');
 const gulp = require('gulp');
 const gulpIf = require('gulp-if');
 const sass = require('gulp-sass');
