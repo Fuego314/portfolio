@@ -49,7 +49,7 @@ gulp.task('watch', ['browserSync', 'sass'], () =>{
   gulp.watch('app/sass/**/*.sass', ['sass']);
   gulp.watch('app/css/main.css', ['prefix']);
   gulp.watch('app/*.html', browserSync.reload);
-  gulp.watch('app/js/**/*.js', ['babel', browserSync.reload]);
+  gulp.watch('app/js/*.js', ['babel', browserSync.reload]);
 });
 
 // OPTIMIZATION TASKS
