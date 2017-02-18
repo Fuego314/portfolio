@@ -14,7 +14,7 @@ const pngquant = require('gulp-pngquant');
 const cache = require('gulp-cache');
 const del = require('del');
 const runSequence = require('run-sequence');
-const browserSync = require('browser-sync').create();
+const browserSync = require('browser-sync');
 const prompt = require('gulp-prompt');
 const deploy = require('gulp-gh-pages');
 
