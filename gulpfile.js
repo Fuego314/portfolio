@@ -9,6 +9,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const uncss = require('gulp-uncss');
 const babel = require('gulp-babel');
 const imagemin = require('gulp-imagemin');
+const pngquant = require('gulp-pngquant');
 const cache = require('gulp-cache');
 const del = require('del');
 const runSequence = require('run-sequence');
@@ -72,11 +73,19 @@ gulp.task('babel', () => {
 });
 
 gulp.task('images', () => {
-  return gulp.src('app/images/**/*.(png|jpg|jpeg|gif|svg)')
-    .pipe(cache(imagemin({
-      interlaced: true
-    })))
+  return gulp.src('app/images/**/*')
+    .pipe(imagemin({
+      optimizationLevel: 5,
+      progressive: true,
+      svgoPlugins: [{removeViewBox: false}],
+      use: [pngquant()]
+    }))
     .pipe(gulp.dest('dist/images'));
+});
+
+gulp.task('video', () => {
+  return gulp.src('app/video/*')
+    .pipe(gulp.dest('dist/video'));
 });
 
 // CLEANING
@@ -87,7 +96,7 @@ gulp.task('clean', () => {
 });
 
 gulp.task('clean:dist', () => {
-  return del.sync(['dist/**/*', '!dist/images', '!dist/images/**/*']);
+  return del.sync(['dist/**/*', '!dist/images', '!dist/images/**/*', '!dist/video', '!dist/video/**/*']);
 });
 
 // BUILD SEQUENCES
@@ -102,7 +111,7 @@ gulp.task('build', (callback) => {
     'clean:dist',
     'sass',
     'babel',
-    ['useref', 'images'],
+    ['useref', 'images', 'video'],
     callback
   );
 });
