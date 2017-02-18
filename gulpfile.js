@@ -109,15 +109,6 @@ gulp.task('build', (callback) => {
 
 // Push build to gh-pages
 gulp.task('deploy', ['build'], () => {
-	gulp.src('package.json')
-    .pipe(prompt.prompt({
-      type: 'input',
-      name: 'commit',
-      message: 'Enter commit message'
-    }, (res) => {
-      return gulp.src('dist/**/*')
-      .pipe(deploy({
-        message: res
-      }));
-    }));
+  return gulp.src('dist/**/*')
+    .pipe(deploy());
 });
