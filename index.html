@@ -61,7 +61,7 @@
 			<h2>About Me</h2>
 			<p>
 				My name is Luke Tucker - I am 23 years old, and I’m based just outside
-				of Portsmouth. For the past 9 months, I have been self-teaching
+				of Portsmouth. For the past 10 months, I have been self-teaching
 				front end front development, starting with the fundamentals and very
 				recently stepping into React. In this time, I’ve managed to get used to
 				the key elements of front end development and look forward to stepping
@@ -154,20 +154,88 @@
 
 			<div class="learning">
 				<h3>Learning</h3>
-				<div class="learning-icon"></div>
+				<div class="learning-icon"><p></p></div>
 			</div><!-- learning -->
 
 		</div><!-- container -->
 	</section>
 
-	<section id="work">
+	<section id="work" class="work">
 		<div class="container">
+			<h2>Portfolio</h2>
+
+			<div class="work-display">
+
+				<div class="icon-row">
+					<div class="work-icon jmb-icon"></div>
+					<div class="work-icon weather-icon"></div>
+					<div class="work-icon bodyC-icon"></div>
+					<div class="work-icon ron-icon"></div>
+				</div><!-- icon row -->
+				<div class="work-previews">
+					<div class="jmb">
+						<img src="images/jmb-lg.jpg" srcset="images/jmb-md.jpg, images/jmb-sm.jpg" alt="JmB-PC Website Preview">
+						<button class="btn">See Project</button>
+					</div>
+					<div class="weather">
+						<img src="images/weather-lg.jpg" srcset="images/weather-md.jpg, images/weather-sm.jpg" alt="Weather App Preview">
+						<button class="btn">See Project</button>
+					</div>
+					<div class="bodyC">
+						<img src="images/bodyC-lg.jpg" srcset="images/bodyC-md.jpg, images/bodyC-sm.jpg" alt="BodyCheck Website Preview">
+						<button class="btn">See Project</button>
+					</div>
+					<div class="ron">
+						<img src="images/ron-lg.jpg" srcset="images/ron-md.jpg, images/ron-sm.jpg" alt="Ron Swanson Quotes Preview">
+						<button class="btn">See Project</button>
+					</div>
+					<div class="pomo">
+						<img src="images/pomo-lg.jpg" srcset="images/pomo-md.jpg, images/pomo-sm.jpg" alt="Pomodoro Timer Preview">
+						<button class="btn">See Project</button>
+					</div>
+					<div class="simon">
+						<img src="images/simon-lg.jpg" srcset="images/simon-md.jpg, images/simon-sm.jpg" alt="Simon Game Preview">
+						<button class="btn">See Project</button>
+					</div>
+					<div class="calc">
+						<img src="images/calc-lg.jpg" srcset="images/calc-md.jpg, images/calc-md.jpg" alt="Simple Calculator Preview">
+						<button class="btn">See Project</button>
+					</div>
+					<div class="wiki">
+						<img src="images/wiki-lg.jpg" srcset="images/wiki-md.jpg, images/wiki-md.jpg" alt="Wiki Viewer Preview">
+						<button class="btn">See Project</button>
+					</div>
+				</div>
+				<div class="icon-row">
+					<div class="work-icon pomo-icon"></div>
+					<div class="work-icon simon-icon"></div>
+					<div class="work-icon calc-icon"></div>
+					<div class="work-icon wiki-icon"></div>
+				</div><!-- icon row -->
+
+			</div><!-- work display -->
 
 		</div><!-- container -->
 	</section>
 
-	<section id="contact">
+	<section id="contact" class="contact light-bg">
 		<div class="container">
+			<h2>contact me</h2>
+
+			<form class="contact-form">
+
+    		<!-- Name -->
+        <input id="name" name="name" type="text" class="form-control name" placeholder="Name">
+
+    		<!-- email -->
+        <input id="email" name="email" type="email" class="form-control email" placeholder="Email" required>
+
+    		<!-- Message -->
+        <textarea id="message" class="form-control message" rows="7" name="comments" placeholder="Message" required></textarea>
+
+  			<button type="submit" class="btn">Send Message</button>
+
+    	</form>
 
 		</div><!-- container -->
 	</section>
