@@ -15,7 +15,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-<body class="animsition">
+<body class="animsition" data-spy="scroll" data-target=".navbar" data-offset="58">
 
 	<header id="header" class="header video-bg">
 		<div class="overlay">
@@ -44,9 +44,9 @@
 			</div><!-- container -->
 		</div><!-- nav-brand -->
 
-		<div class="nav closed">
+		<div class="navbar closed">
 			<div class="container">
-				<ul>
+				<ul class="nav">
 					<li><a href="#about" class="nav-link">About</a></li>
 					<li><a href="#skills" class="nav-link">Skills</a></li>
 					<li><a href="#work" class="nav-link">Portfolio</a></li>
@@ -181,13 +181,14 @@
 					<div class="work-icon ron-icon"></div>
 				</div><!-- icon row -->
 				<div class="work-previews">
+					<div class="preview-intro"><p>Click an icon to see a preview</p></div>
 					<div class="preview jmb">
 						<div class="preview-img jmb-pre"></div>
-						<button class="btn">See Project</button>
+						<a class="btn" href="work/jmb/dist/index.html" target="_blank">See Project</a>
 					</div>
 					<div class="preview weather">
 						<div class="preview-img weather-pre"></div>
-						<button class="btn">See Project</button>
+						<a class="btn" href="work/weather/dist/index.html" target="_blank">See Project</a>
 					</div>
 					<div class="preview bodyC">
 						<div class="preview-img bodyC-pre"></div>
@@ -207,14 +208,14 @@
 					</div>
 					<div class="preview calc">
 						<div class="preview-img calc-pre"></div>
-						<button class="btn">See Project</button>
+						<a class="btn" href="work/calculator/dist/index.html" target="_blank">See Project</a>
 					</div>
 					<div class="preview wiki">
 						<div class="preview-img wiki-pre"></div>
 						<button class="btn">See Project</button>
 					</div>
 				</div>
-				<div class="icon-row">
+				<div class="icon-row row-move">
 					<div class="work-icon pomo-icon"></div>
 					<div class="work-icon simon-icon"></div>
 					<div class="work-icon calc-icon"></div>
@@ -240,7 +241,7 @@
 				</div><!-- name email -->
 
     		<!-- Message -->
-        <textarea id="message" class="form-control message" rows="7" name="comments" placeholder="Message" required></textarea>
+        <textarea id="message" class="form-control message" rows="11" name="comments" placeholder="Message" required></textarea>
 
   			<button type="submit" class="btn">Send Message</button>
 
@@ -251,11 +252,11 @@
 
 	<footer>
 		<div class="container">
-
+			<p class="credits">© 2017 Luke Tucker. All Rights Reserved.</p>
+			<p class="credits">Designed and created by Luke Tucker.</p>
 		</div><!-- container -->
 	</footer>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="js/main.min.js"></script>
 </body>
 </html>
