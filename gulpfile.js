@@ -35,7 +35,7 @@ gulp.task('sass', () => {
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(uncss({
         html: ['app/index.html'],
-        ignore: ['.nav.open', '.top-bar-open', '.middle-bar-open', '.bottom-bar-open', '.previews-open'],
+        ignore: ['.navbar.open', '.top-bar-open', '.middle-bar-open', '.bottom-bar-open', '.previews-open', '.active'],
         ignoreSheets: [/fonts.googleapis/]
     }))
     .pipe(autoprefixer({
@@ -73,6 +73,8 @@ gulp.task('babel', () => {
     .pipe(gulp.dest('app/js/babel'));
 });
 
+
+// BUILD TASKS
 gulp.task('images', () => {
   return gulp.src('app/images/**/*')
     .pipe(imagemin({
@@ -94,6 +96,11 @@ gulp.task('fonts', () => {
     .pipe(gulp.dest('dist/fonts'));
 });
 
+gulp.task('work', () => {
+		return gulp.src(['app/work/**/dist/**/*', '!app/work/**/node_modules/**/*'])
+			.pipe(gulp.dest('dist/work'))
+});
+
 // CLEANING
 gulp.task('clean', () => {
   return del.sync('dist').then((cb) => {
@@ -113,7 +120,7 @@ gulp.task('default', (callback) => {
 });
 
 gulp.task('folders', () => {
-  runSequence('video', 'fonts');
+  runSequence('video', 'fonts', 'work');
 });
 
 gulp.task('build', (callback) => {
