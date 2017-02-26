@@ -97,7 +97,7 @@ gulp.task('fonts', () => {
 });
 
 gulp.task('work', () => {
-		return gulp.src(['app/work/**/dist/**/*', '!app/work/**/node_modules/**/*'])
+		return gulp.src(['app/work/**/**/*'])
 			.pipe(gulp.dest('dist/work'))
 });
 
@@ -135,6 +135,6 @@ gulp.task('build', (callback) => {
 
 // Push build to gh-pages
 gulp.task('deploy', ['build'], () => {
-  return gulp.src('dist/**/*')
+  return gulp.src('dist/**/**/**/*')
     .pipe(deploy());
 });
