@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+	<title>Wikipedia Viewer</title>
+	<meta name="description" content="Search Wikipedia and see relating Wiki entries.">
+	<meta name="Author" content="Luke Tucker">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:700%7COpen+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.min.css">
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="container">
+
+		<section id="top" class="top-holder">
+
+			<img id="wiki-logo" class="logo" src="https://goo.gl/QHOAVk" alt="Wiki Logo">
+			<h1 id="main-head" class="wiki-header">
+				<!-- Wikipedia Veiwer // Spans for larger letters -->
+				<span class="h1-cap">W</span>IKIPEDI<span class="h1-cap">A </span><span class="h1-cap">V</span>IEWER
+			</h1>
+
+			<div id="search">
+				<div>
+					<input id="wiki-search" type="search" required>
+					<div id="search-btn"><img src="images/search.svg" class="srch-btn-svg" alt="Search Icon"></div>
+				</div>
+				<a id="random-btn" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><img src="images/random.svg" class="rndm-btn-svg" alt="Random Wiki Icon"></a>
+			</div><!-- search -->
+
+			<div class="no-input hidden"></div>
+
+		</section><!-- top -->
+
+		<section class="results-holder">
+
+			<div id="results">
+				<!-- Wikipedia entries added here -->
+			</div><!-- results -->
+
+		</section><!-- results holder -->
+
+	</div><!-- container -->
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script src="js/main.min.js"></script>
+</body>
+</html>
