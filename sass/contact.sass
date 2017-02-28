@@ -1,0 +1,44 @@
+.contact-form
+	margin-bottom: 1em
+.form-control
+	width: 100%
+	margin-bottom: 1.75em
+	padding: .2em .3em 0
+	border: 0
+	border-bottom: 1px solid #2e3233
+	background: transparent
+
+.name,
+.email
+	height: 30px
+
+.btn
+	position: relative
+	display: block
+	margin: 0 auto
+	padding: .8em 1.3em .65em
+	border: 2px solid #2e3233
+	border-radius: 25px
+	background: transparent
+	// &:hover
+	// 	bottom: 1px
+	// 	box-shadow: 0 3px 6px 1px #2e3233
+	// &:active
+	// 	bottom: 0
+	// 	box-shadow: none
+
+@media(min-width: 768px)
+	.name-email
+		display: flex
+		flex-direction: row
+		margin-top: 2em
+	.name
+		margin-right: 1em
+	.email
+		margin-left: 1em
+	.message
+		margin-top: .5em
+
+@media(min-width: 1020px)
+	.message
+		margin-top: 1.5em

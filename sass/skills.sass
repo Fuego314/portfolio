@@ -1,0 +1,557 @@
+.work-display
+	position: relative
+	width: 256px
+	height: 327px
+	min-width: 256px
+	margin: 0 auto 1em
+	.preview-img
+		height: 150px
+		background-image: url('../images/preview-sprite-xs.jpg')
+		background-size: cover
+	.icon-row
+		display: flex
+		.work-icon
+			width: 4em
+			height: 4em
+			cursor: pointer
+			background-image: url('../images/work-sprite.svg')
+			background-size: cover
+	.row-move
+		position: absolute
+		top: 263px
+
+.weather-icon
+	background-position: 4em * 7
+.bodyC-icon
+	background-position: 4em * 6
+.ron-icon
+	background-position: 4em * 5
+.pomo-icon
+	background-position: 4em * 4
+.simon-icon
+	background-position: 4em * 3
+.calc-icon
+	background-position: 4em * 2
+.wiki-icon
+	background-position: 4em
+
+.weather-pre
+	background-position: 256px * 7
+.bodyC-pre
+	background-position: 256px * 6
+.ron-pre
+	background-position: 256px * 5
+.pomo-pre
+	background-position: 256px * 4
+.simon-pre
+	background-position: 256px * 3
+.calc-pre
+	background-position: 256px * 2
+.wiki-pre
+	background-position: 256px
+
+.work-previews
+	position: relative
+	height: 0
+	transition: all .4s
+	.preview
+		position: absolute
+		display: none
+		opacity: 0
+		transition: all .6s
+		.btn
+			display: table
+			margin-top: .4em
+			margin-bottom: .4em
+	.preview-intro
+		position: absolute
+		display: flex
+		align-items: center
+		justify-content: center
+		height: 199px
+		width: 256px
+		padding: 1em
+		background: #ececec
+
+.previews-open
+	height: 195px
+
+.showing
+	z-index: 10
+
+@media(max-width: 767px)
+	.work-previews,
+	.preview,
+	.preview-img
+		width: 100%
+
+@media(min-width: 340px)
+	.work-display
+		width: 288px
+		height: 366px
+		.icon-row .work-icon
+			width: 4.5em
+			height: 4.5em
+		.row-move
+			top: 294px
+		.preview-intro
+			height: 222px
+			width: 288px
+		.preview-img
+			height: 168px
+			background-image: url('../images/preview-sprite-sm.jpg')
+	.weather-icon
+		background-position: 4.5em * 7
+	.bodyC-icon
+		background-position: 4.5em * 6
+	.ron-icon
+		background-position: 4.5em * 5
+	.pomo-icon
+		background-position: 4.5em * 4
+	.simon-icon
+		background-position: 4.5em * 3
+	.calc-icon
+		background-position: 4.5em * 2
+	.wiki-icon
+		background-position: 4.5em
+	.previews-open
+		height: 219px
+	.weather-pre
+		background-position: 288px * 7
+	.bodyC-pre
+		background-position: 288px * 6
+	.ron-pre
+		background-position: 288px * 5
+	.pomo-pre
+		background-position: 288px * 4
+	.simon-pre
+		background-position: 288px * 3
+	.calc-pre
+		background-position: 288px * 2
+	.wiki-pre
+		background-position: 288px
+
+@media(min-width: 410px)
+	.work-display
+		width: 344px
+		height: 427px
+		.icon-row .work-icon
+			width: 5.375em
+			height: 5.375em
+		.row-move
+			top: 341px
+		.preview-intro
+			height: 255px
+			width: 344px
+		.preview-img
+			height: 201px
+			background-image: url('../images/preview-sprite-md.jpg')
+	.weather-icon
+		background-position: 5.375em * 7
+	.bodyC-icon
+		background-position: 5.375em * 6
+	.ron-icon
+		background-position: 5.375em * 5
+	.pomo-icon
+		background-position: 5.375em * 4
+	.simon-icon
+		background-position: 5.375em * 3
+	.calc-icon
+		background-position: 5.375em * 2
+	.wiki-icon
+		background-position: 5.375em
+	.previews-open
+		height: 251px
+	.weather-pre
+		background-position: 344px * 7
+	.bodyC-pre
+		background-position: 344px * 6
+	.ron-pre
+		background-position: 344px * 5
+	.pomo-pre
+		background-position: 344px * 4
+	.simon-pre
+		background-position: 344px * 3
+	.calc-pre
+		background-position: 344px * 2
+	.wiki-pre
+		background-position: 344px
+
+@media(min-width: 768px)
+	.work-display
+		display: flex
+		width: 666px
+		height: 344px
+		margin: 0 auto
+		.row-move
+			top: 0
+			left: 580px
+		.icon-row
+			flex-direction: column
+		.work-previews
+			position: absolute
+			left: 86px
+			.preview-intro
+				height: 344px
+			.preview,
+			.preview-intro
+				width: 494px
+			.preview-img
+				height: 289px
+				background-image: url('../images/preview-sprite-lg.jpg')
+			.work-previews,
+			.work-previews .preview
+				width: 509px
+				height: 256px
+	.weather-pre
+		background-position: 351px * 7
+	.bodyC-pre
+		background-position: 351px * 6
+	.ron-pre
+		background-position: 351px * 5
+	.pomo-pre
+		background-position: 351px * 4
+	.simon-pre
+		background-position: 351px * 3
+	.calc-pre
+		background-position: 351px * 2
+	.wiki-pre
+		background-position: 351px
+	.previews-open
+		width: 494px
+		height: 344px
+	.weather-pre
+		background-position: 494px * 7
+	.bodyC-pre
+		background-position: 494px * 6
+	.ron-pre
+		background-position: 494px * 5
+	.pomo-pre
+		background-position: 494px * 4
+	.simon-pre
+		background-position: 494px * 3
+	.calc-pre
+		background-position: 494px * 2
+	.wiki-pre
+		background-position: 494px
+
+@media(min-width: 1020px)
+	.work-display
+		width: 792px
+		height: 400px
+		.work-previews
+			left: 100px
+			.preview-img
+				height: 346px
+				background-image: url('../images/preview-sprite-xl.jpg')
+		.work-previews,
+		.work-previews .preview,
+		.work-previews .preview-intro
+			width: 592px
+			height: 400px
+		.icon-row .work-icon
+			width: 100px
+			height: 100px
+		.row-move
+			left: 692px
+		.weather-icon
+			background-position: 100px * 7
+		.bodyC-icon
+			background-position: 100px * 6
+		.ron-icon
+			background-position: 100px * 5
+		.pomo-icon
+			background-position: 100px * 4
+		.simon-icon
+			background-position: 100px * 3
+		.calc-icon
+			background-position: 100px * 2
+		.wiki-icon
+			background-position: 100px
+		.weather-pre
+			background-position: 592px * 7
+		.bodyC-pre
+			background-position: 592px * 6
+		.ron-pre
+			background-position: 592px * 5
+		.pomo-pre
+			background-position: 592px * 4
+		.simon-pre
+			background-position: 592px * 3
+		.calc-pre
+			background-position: 592px * 2
+		.wiki-pre
+			background-position: 592px
+
+.skills-content,
+.tools-learning
+	display: flex
+	flex-direction: column
+
+
+.skill-icon,
+.tool,
+.learning-icon
+  background-image: url('../images/skills-sprite.svg')
+  background-size: cover
+
+
+.skills-holder
+  max-width: 250px
+  margin: 0 auto 1.5em
+  .skill
+    display: flex
+    margin-bottom: 4px
+    align-items: center
+    &:nth-child(odd)
+      flex-direction: row-reverse
+    .skill-icon
+      width: 50px
+      height: 58px
+      @media(min-width: 1020px)
+        width: 63px
+        height: 73px
+    .skill-perc
+      width: 12.5em
+      height: 28px
+      border-radius: 0 20px 20px 0
+      .perc
+        height: 100%
+
+  .skill
+    &:nth-child(odd)
+      .skill-perc
+        border-radius: 20px 0 0 20px
+        .perc
+          display: flex
+          margin-left: auto
+
+.skills-holder
+  @media (min-width: 360px)
+    max-width: 310px
+    .skill
+      .skill-perc
+        width: 16.15em
+  @media (min-width: 545px)
+    max-width: 510px
+    .large-display
+      display: flex
+      .skill
+        margin-bottom: 20px
+        &:nth-child(even)
+          margin-left: 2px
+        &:nth-child(odd)
+          margin-right: 2px
+        .skill-perc
+          width: 12.5em
+
+.html-icon
+  background-position: -1px
+  &:hover
+    background-position: 51px * 23
+.html-perc
+  border: 1px solid #e34f27
+  .perc
+    width: 90%
+    background-color: #e34f27
+
+.css-icon
+  background-position: 51px * 22
+  &:hover
+    background-position: 51px * 21
+.css-perc
+  border: 1px solid #2663ac
+  .perc
+    width: 85%
+    background-color: #2663ac
+
+.bs-icon
+  background-position: 51px * 20
+  &:hover
+    background-position: 51px * 19
+.bs-perc
+  border: 1px solid #5d4487
+  .perc
+    width: 90%
+    background-color: #5d4487
+
+.resp-icon
+  background-position: 51px * 18
+  &:hover
+    background-position: 51px * 17
+.resp-perc
+  border: 1px solid #4b4a4a
+  .perc
+    width: 95%
+    background-color: #4b4a4a
+
+.js-icon
+  background-position: 51px * 16
+  &:hover
+    background-position: 51px * 15
+.js-perc
+  border: 1px solid #f0db4f
+  .perc
+    width: 70%
+    background-color: #f0db4f
+
+.jQ-icon
+  background-position: 51px * 14
+  &:hover
+    background-position: 51px * 13
+.jQ-perc
+  border: 1px solid #0c6aae
+  .perc
+    width: 70%
+    background-color: #0c6aae
+
+.ill-icon
+  background-position: 51px * 12
+  &:hover
+    background-position: 51px * 11
+.ill-perc
+  border: 1px solid #f7a932
+  .perc
+    width: 60%
+    background-color: #f7a932
+
+.ps-icon
+  background-position: 51px * 10
+  &:hover
+    background-position: 51px * 9
+.ps-perc
+  border: 1px solid #85b9e5
+  .perc
+    width: 55%
+    background-color: #85b9e5
+
+.tool-holder
+  position: relative
+  width: 250px
+  height: 235px
+  margin: 0 auto
+  .tool
+    position: absolute
+    width: 80px
+    height: 92px
+    &:nth-of-type(1)
+      left: 44px
+      background-position: 81px * 8 - 1
+    &:nth-of-type(2)
+      top: 71px
+      left: 4px
+      background-position: 81px * 7 - 1
+    &:nth-of-type(3)
+      top: 142px
+      left: 44px
+      background-position: 81px * 6 - 1
+    &:nth-of-type(4)
+      top: 142px
+      right: 44px
+      background-position: 81px * 5
+    &:nth-of-type(5)
+      top: 71px
+      right: 4px
+      background-position: 81px * 4
+    &:nth-of-type(6)
+      right: 43px
+      top: 0
+      background-position: 81px * 3 - 1
+  .tool-name
+    position: absolute
+    width: 83px
+    top: 82px
+    left: 83px
+
+.learning
+  margin-top: 1.5em
+  h3
+    margin: 0 0 .5em
+  .learning-icon
+    position: relative
+    width: 80px
+    height: 92px
+    margin: 0 auto 1em
+    background-position: 81px * 2
+    &:hover
+      background-position: 81px
+    p
+      position: absolute
+      top: 8px
+      left: 8px
+
+@media(min-width: 768px)
+  .skills-holder
+    max-width: 535px
+    .large-display .skill .skill-perc
+      width: 13.3em
+  .tools-learning
+      flex-direction: row
+      justify-content: space-around
+      align-items: center
+      .tool-holder
+        margin: 0
+      .learning
+        margin-top: 0
+        .learning-icon
+          margin-bottom: .5em
+
+@media(min-width: 1020px)
+  .skills
+    .container
+      max-width: 950px
+  .skills-content
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    .skills-holder
+      max-width: 556px
+      margin: 0
+    .large-display
+      .skill
+        margin-bottom: 30px
+        .skill-perc
+          height: 37px
+      &:nth-child(4)
+        .skill
+          margin-bottom: 0
+    .tools-learning
+      flex-direction: column
+      .learning
+        margin-top: 1em
+  .html-icon
+    background-position: -2px
+    &:hover
+      background-position: 64px * 23 + 4
+  .css-icon
+    background-position: 64px * 22 + 5
+    &:hover
+      background-position: 64px * 21 + 5
+  .bs-icon
+    background-position: 64px * 20 + 4
+    &:hover
+      background-position: 64px * 19 + 4
+  .resp-icon
+    background-position: 64px * 18 + 4
+    &:hover
+      background-position: 64px * 17 + 4
+  .js-icon
+    background-position: 64px * 16 + 3
+    &:hover
+      background-position: 64px * 15 + 2
+  .jQ-icon
+    background-position: 64px * 14 + 3
+    &:hover
+      background-position: 64px * 13 + 3
+  .ill-icon
+    background-position: 64px * 12 + 1
+    &:hover
+      background-position: 64px * 11 + 1
+  .ps-icon
+    background-position: 64px * 10 + 2
+    &:hover
+      background-position: 64px * 9 + 2
+@media(min-width: 1200px)
+  .skills
+    .container
+      max-width: 1000px
