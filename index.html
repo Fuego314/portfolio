@@ -10,11 +10,7 @@
   <meta name="Author" content="Luke Tucker">
 	<meta name="Robots" content="index, follow">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700|Roboto:400,500,70" rel="stylesheet">
-	<!-- build:css css/styles.min.css -->
-	<link rel="stylesheet" href="css/normalize.min.css">
-	<link rel="stylesheet" href="css/animsition.min.css">
-	<link rel="stylesheet" href="css/main.css" >
-	<!-- endbuild -->
+	<link rel="stylesheet" href="css/styles.min.css">
 	<!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -25,7 +21,7 @@
 	<header id="header" class="header video-bg">
 		<div class="overlay">
 			<h1>Luke Tucker</h1>
-			<h2>Future Front End Developer</h2>
+			<h2>Front End Developer</h2>
 			<a href="#about">
 				<img class="down" src="images/head-down.svg" alt="Down Arrow">
 			</a>
@@ -37,10 +33,10 @@
 
 	</header>
 
-	<nav class="hidden">
+	<nav class="transparent">
 		<div class="nav-brand">
 			<div class="container">
-				<img src="images/head-logo.svg" alt="Tucker">
+				<img src="images/head-logo.svg" alt="Tucker Logo">
 				<button class="navbar-toggle">
 					<span class="toggle-bar top-bar"></span>
 					<span class="toggle-bar middle-bar"></span>
@@ -49,7 +45,7 @@
 			</div><!-- container -->
 		</div><!-- nav-brand -->
 
-		<div class="navbar closed">
+		<div class="navbar">
 			<div class="container">
 				<ul class="nav">
 					<li><a href="#about" class="nav-link">About</a></li>
@@ -99,44 +95,36 @@
 
 				<div class="skills-holder">
 
-					<div class="large-display">
+					<div class="two-skills">
 						<div class="skill">
 							<div class="skill-icon html-icon"></div>
-							<div class="skill-perc html-perc"><div class="perc"></div></div>
 						</div><!-- skill -->
 						<div class="skill">
 							<div class="skill-icon css-icon"></div>
-							<div class="skill-perc css-perc"><div class="perc"></div></div>
 						</div><!-- skill -->
 					</div>
-					<div class="large-display">
+					<div class="two-skills">
 						<div class="skill">
 							<div class="skill-icon bs-icon"></div>
-							<div class="skill-perc bs-perc"><div class="perc"></div></div>
 						</div><!-- skill -->
 						<div class="skill">
 							<div class="skill-icon resp-icon"></div>
-							<div class="skill-perc resp-perc"><div class="perc"></div></div>
 						</div><!-- skill -->
 					</div>
-					<div class="large-display">
+					<div class="two-skills">
 						<div class="skill">
 							<div class="skill-icon js-icon"></div>
-							<div class="skill-perc js-perc"><div class="perc"></div></div>
 						</div><!-- skill -->
 						<div class="skill">
 							<div class="skill-icon jQ-icon"></div>
-							<div class="skill-perc jQ-perc"><div class="perc"></div></div>
 						</div><!-- skill -->
 					</div>
-					<div class="large-display">
+					<div class="two-skills">
 						<div class="skill">
 							<div class="skill-icon ill-icon"></div>
-							<div class="skill-perc ill-perc"><div class="perc"></div></div>
 						</div><!-- skill -->
 						<div class="skill">
 							<div class="skill-icon ps-icon"></div>
-							<div class="skill-perc ps-perc"><div class="perc"></div></div>
 						</div><!-- skill -->
 					</div>
 
@@ -171,55 +159,105 @@
 			<h2>Portfolio</h2>
 
 			<div class="work-display">
-
-				<div class="icon-row">
-					<div class="work-icon jmb-icon"></div>
-					<div class="work-icon weather-icon"></div>
-					<div class="work-icon bodyC-icon"></div>
-					<div class="work-icon ron-icon"></div>
-				</div><!-- icon row -->
 				<div class="work-previews">
-					<div class="preview-intro"><p>Click an icon to see a preview</p></div>
-					<div class="preview jmb">
-						<div class="preview-img jmb-pre"></div>
-						<a class="btn" href="work/jmb/index.html" target="_blank">See Project</a>
-					</div>
-					<div class="preview weather">
-						<div class="preview-img weather-pre"></div>
-						<a class="btn" href="work/weather/index.html" target="_blank">See Project</a>
-					</div>
-					<div class="preview bodyC">
-						<div class="preview-img bodyC-pre"></div>
-						<a class="btn" href="work/bodyC/index.html" target="_blank">See Project</a>
-					</div>
-					<div class="preview ron">
-						<div class="preview-img ron-pre"></div>
-						<a class="btn" href="work/ron/index.html" target="_blank">See Project</a>
-					</div>
-					<div class="preview pomo">
-						<div class="preview-img pomo-pre"></div>
-						<a class="btn" href="work/pomodoro/index.html" target="_blank">See Project</a>
-					</div>
-					<div class="preview simon">
-						<div class="preview-img simon-pre"></div>
-						<a class="btn" href="work/simon/index.html" target="_blank">See Project</a>
-					</div>
-					<div class="preview calc">
-						<div class="preview-img calc-pre"></div>
-						<a class="btn" href="work/calculator/index.html" target="_blank">See Project</a>
-					</div>
-					<div class="preview wiki">
-						<div class="preview-img wiki-pre"></div>
-						<a class="btn" href="work/wiki/index.html" target="_blank">See Project</a>
-					</div>
-				</div>
-				<div class="icon-row row-move">
-					<div class="work-icon pomo-icon"></div>
-					<div class="work-icon simon-icon"></div>
-					<div class="work-icon calc-icon"></div>
-					<div class="work-icon wiki-icon"></div>
-				</div><!-- icon row -->
 
+					<div class="large-row">
+						<div class="preview jmb">
+							<div class="preview-img jmb-pre"></div>
+							<div class="preview-info">
+								<div class="info-content">
+									<h4>JmB-PC Website</h4>
+									<a class="btn" href="work/jmb/index.html" target="_blank">See Project</a>
+									<img class="close hidden"  src="images/close.svg" alt="Close">
+								</div><!-- info content -->
+							</div><!-- preview info -->
+						</div><!-- preview -->
+
+						<div class="preview weather">
+							<div class="preview-img weather-pre"></div>
+							<div class="preview-info">
+								<div class="info-content">
+									<h4>Weather App</h4>
+									<a class="btn" href="work/weather/index.html" target="_blank">See Project</a>
+									<img class="close hidden"  src="images/close.svg" alt="Close">
+								</div><!-- info content -->
+							</div><!-- preview info -->
+						</div><!-- preview -->
+					</div><!-- large row -->
+
+					<div class="large-row">
+						<div class="preview bodyC">
+							<div class="preview-img bodyC-pre"></div>
+							<div class="preview-info">
+								<div class="info-content">
+									<h4>BodyCheck Website</h4>
+									<a class="btn" href="work/bodyC/index.html" target="_blank">See Project</a>
+									<img class="close hidden"  src="images/close.svg" alt="Close">
+								</div><!-- info content -->
+							</div><!-- preview info -->
+						</div><!-- preview -->
+
+						<div class="preview ron">
+						<div class="preview-img ron-pre"></div>
+						<div class="preview-info">
+							<div class="info-content">
+								<h4>Ron Swanson Quote Generator</h4>
+								<a class="btn" href="work/ron/index.html" target="_blank">See Project</a>
+								<img class="close hidden"  src="images/close.svg" alt="Close">
+							</div><!-- info content -->
+						</div><!-- preview info -->
+					</div><!-- preview -->
+					</div><!-- large row -->
+
+					<div class="large-row">
+						<div class="preview pomo">
+							<div class="preview-img pomo-pre"></div>
+							<div class="preview-info">
+								<div class="info-content">
+									<h4>Pomodoro Timer</h4>
+									<a class="btn" href="work/pomodoro/index.html" target="_blank">See Project</a>
+									<img class="close hidden"  src="images/close.svg" alt="Close">
+								</div><!-- info content -->
+							</div><!-- preview info -->
+						</div><!-- preview -->
+
+						<div class="preview simon">
+						<div class="preview-img simon-pre"></div>
+						<div class="preview-info">
+							<div class="info-content">
+								<h4>Simon Game</h4>
+								<a class="btn" href="work/simon/index.html" target="_blank">See Project</a>
+								<img class="close hidden"  src="images/close.svg" alt="Close">
+							</div><!-- info content -->
+						</div><!-- preview info -->
+					</div><!-- preview -->
+					</div><!-- large row -->
+
+					<div class="large-row">
+						<div class="preview calc">
+							<div class="preview-img calc-pre"></div>
+							<div class="preview-info">
+								<div class="info-content">
+									<h4>Simple Calculator</h4>
+									<a class="btn" href="work/calculator/index.html" target="_blank">See Project</a>
+									<img class="close hidden"  src="images/close.svg" alt="Close">
+								</div><!-- info content -->
+							</div><!-- preview info -->
+						</div><!-- preview -->
+
+						<div class="preview wiki">
+						<div class="preview-img wiki-pre"></div>
+						<div class="preview-info">
+							<div class="info-content">
+								<h4>Wikipedia Viewer</h4>
+								<a class="btn" href="work/wiki/index.html" target="_blank">See Project</a>
+								<img class="close hidden"  src="images/close.svg" alt="Close">
+							</div><!-- info content -->
+						</div><!-- preview info -->
+					</div><!-- preview -->
+					</div><!-- large row -->
+
+				</div><!-- work previews -->
 			</div><!-- work display -->
 
 		</div><!-- container -->
@@ -233,13 +271,21 @@
 
 				<div class="name-email">
 					<!-- Name -->
-					<input id="name" name="name" type="text" class="form-control name" placeholder="Name">
-					<!-- email -->
-					<input id="email" name="email" type="email" class="form-control email" placeholder="Email" required>
+					<div class="form-group">
+						<label class="control-label" for="name">Name</label>
+						<input id="name" name="name" type="text" class="form-control name">
+					</div><!-- form group -->
+
+					<!-- Email -->
+					<div class="form-group">
+						<label class="control-label" for="email">Email</label>
+						<input id="email" name="email" type="email" class="form-control email" required>
+					</div><!-- form group -->
 				</div><!-- name email -->
 
     		<!-- Message -->
-        <textarea id="message" class="form-control message" rows="11" name="comments" placeholder="Message" required></textarea>
+				<label class="control-label" for="message">Message</label>
+        <textarea id="message" class="form-control message" rows="11" name="message" required></textarea>
 
   			<button type="submit" class="btn">Send Message</button>
 
@@ -256,10 +302,7 @@
 	</footer>
 
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-	<!--build:js js/main.min.js -->
-	<script src="js/babel/animsition.js"></script>
-	<script src="js/babel/scrollspy.js"></script>
-	<script src="js/babel/main.js"></script>
-	<!-- endbuild -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<script src="js/main.min.js"></script>
 </body>
 </html>

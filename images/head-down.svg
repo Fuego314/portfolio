@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="58px" height="58px" viewBox="0 0 58 58" style="enable-background:new 0 0 58 58;" xml:space="preserve">
-<style type="text/css">
-	.st0{opacity:0.7;}
-	.st1{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
-</style>
-<circle class="st0" cx="29" cy="29" r="29"/>
-<polygon class="st1" points="29,45.8 10.8,20.2 28.7,20.2 47.2,20.2 "/>
-</svg>
+<svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58"><style>.st0{opacity:.7}.st1{fill:none;stroke:#fff;stroke-miterlimit:10}</style><circle class="st0" cx="29" cy="29" r="29"/><path class="st1" d="M29 45.8L10.8 20.2h36.4z"/></svg>
