@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Travel Journal</title>
+	<meta name="description" content="Travel Journal design for mobile app">
+  <meta name="Author" content="Luke Tucker">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.min.css">
+	<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="animsition" data-spy="scroll" data-target=".navbar" data-offset="58">
+
+	<div class="container">
+		<div class="app-container">
+
+			<header class="header">
+				<div class="header-content">
+
+					<div class="back-arrow"></div>
+
+					<h2>Photos</h2>
+
+					<img src="images/show-location.svg" alt="Show Location" class="show-location">
+
+				</div><!-- header content -->
+			</header>
+
+			<div class="photo-display">
+
+				<div class="main-photo"></div>
+
+				<div class="photo-stats">
+
+					<div class="like">
+						<div class="like-icon" alt="Like"></div>
+						<p class="stats-text like-stats">24 Likes</p>
+					</div><!-- likes -->
+
+					<div class="comments show-more-info">
+						<img src="images/comments.svg" alt="Comments" class="comments-icon">
+						<p class="stats-text">1 Comment</p>
+					</div><!-- comments -->
+
+					<div class="share">
+						<img src="images/share.svg" alt="Share" class="share-icon">
+						<p class="stats-text">20 Share</p>
+						<div class="share-links">
+							<div class="share-icons"></div>
+							<div class="share-icons"></div>
+							<div class="share-icons"></div>
+							<div class="share-icons"></div>
+							<img class="close-share" src="images/close.svg" alt="Close">
+						</div>
+					</div><!-- share -->
+
+				</div><!-- photo stats -->
+
+				<hr>
+
+			</div><!-- photo display -->
+
+			<div class="photo-info-sm">
+
+				<h3 class="photo-title">1 World Trade Center</h3>
+
+				<div class="location-info">
+					<img src="images/location-info.svg" alt="Location Info" class="location-icon">
+					<p class="location-text">Fulton St, New York City</p>
+				</div><!-- location info -->
+
+				<p class="photo-desc-text">One World Trade Center, the main building of the rebuilt World Trade Center. The tallest skyscraper in the Western Hemisphere</p>
+
+				<div class="more-info show-more-info">
+					<img src="images/more-info.svg" alt="More" class="more-icon">
+				</div>
+
+			</div><!-- photo info sm -->
+
+			<div class="photo-info-detailed">
+
+				<div class="photo-detailed"></div>
+
+				<div class="photo-detailed-description">
+					<div class="detailed-desc-head">
+						<img class="face-lg" src="images/face-lg1.jpg" alt="Publisher Profile Photo">
+
+						<div class="desc-title">
+							<h3>1 World Trade Center</h3>
+							<p>by tony on Mar 4, 2017</p>
+						</div><!-- desc title -->
+					</div><!-- detailed desc head -->
+
+					<p class="photo-desc-text">One World Trade Center, the main building of the rebuilt World Trade Center. The tallest skyscraper in the Western Hemisphere</p>
+
+				</div><!-- photo detailed description -->
+
+				<div class="more-info-base">
+					<div class="more-photos">
+						<div class="other-photos"></div>
+						<div class="other-photos"></div>
+						<div class="other-photos"></div>
+						<div class="other-photos"></div>
+					</div>
+
+					<div class="like-bar">
+						<div class="like-bar-stats">
+							<div class="like-icon" alt="Like"></div>
+							<p class="stats-text like-stats">24 Likes</p>
+						</div><!-- like bar stats -->
+
+						<div class="who-liked">
+							<img class="face-sm" src="images/face-sm1.jpg" alt="Liked by">
+							<img class="face-sm" src="images/face-sm2.jpg" alt="Liked by">
+							<img class="face-sm" src="images/face-sm3.jpg" alt="Liked by">
+							<p class="amount-liked">+24</p>
+						</div><!-- who liked -->
+					</div><!-- like bar -->
+
+					<div class="main-comments">
+
+						<div class="main-comms-head">
+							<h4>comments (1)</h4>
+							<p class="add-comment">+ comment</p>
+							<p class="publish-comm">share comment</p>
+						</div><!-- main comms head -->
+
+						<hr>
+
+						<div class="user-comments">
+
+							<div class="com">
+
+								<div class="com-holder">
+									<img class="face-lg" src="images/face-lg2.jpg" alt="Commenter Profile Picture">
+
+									<div class="comment-container">
+										<div class="commenter-name">sally <span class="time">2 hours ago</span></div>
+										<div class="users-comment">
+											<p>
+												Wow, awesome shot <span class="tagged">@tony</span>! Your camera skills are really improving, keep it up :)
+											</p>
+										</div><!-- users comment -->
+									</div><!-- comment container -->
+								</div><!-- com holder -->
+
+							</div><!-- com -->
+
+							<div class="actual-comment-holder">
+								<img class="close-comments" src="images/close.svg" alt="Close">
+								<textarea class="form-control actual-comment" rows="4" name="comment" placeholder="Comment..." required></textarea>
+							</div>
+
+						</div><!-- user comments -->
+
+
+					</div><!-- main comments -->
+
+				</div><!-- more-info-base -->
+			</div><!-- photo info detailed -->
+
+			<div id="map" class="map"></div>
+
+			<div class="more-info map-back">
+				<img src="images/back-arrow.svg" alt="back" class="map-arrow">
+			</div>
+
+		</div><!-- app container -->
+		<p class="credit">Designed by <a href="https://dribbble.com/shots/3273471-Travel-Journal">Mahisa Dyan Diptya</a>, coded by Luke Tucker.</p>
+	</div><!-- container -->
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script>
+    function initMap() {
+      var fulton = {lat: 40.7105, lng: -74.0095};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 14,
+        center: fulton
+      });
+      var marker = new google.maps.Marker({
+        position: fulton,
+        map: map
+      });
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8IHVFTU69NX1sra1ToLliz5bZYHzQdZ0&callback=initMap"></script>
+	<script src="js/main.min.js"></script>
+</body>
+</html>
